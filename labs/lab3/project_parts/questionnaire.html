@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire</title>
+  </head>
+
+  <body>
+    <form action="action_page.html" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>
+          <h1>Форма для заповнення</h1>
+        </legend>
+        <fieldset>
+          <legend>Особисті дані</legend>
+          <label for="name">Ім'я</label>
+          <input
+            tabindex="3"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Введіть ім'я"
+            pattern="[A-Za-z][^0-9]{6,}"
+          />
+          <br /><br />
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Введіть пароль"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}"
+            required
+          />
+
+          <br /><br />
+          <label for="date">День народження</label>
+          <input type="date" name="date" id="date" />
+          <br /><br />
+          <label for="email">Введіть свій Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            autocomplete="off"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+
+          /><br /><br />
+          <label for="tel">Введіть свій номер:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="+380XXXXXXXXX"
+            pattern="^\+380\d{9}$"
+            required
+          />
+
+          <br /><br />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Додати файли</legend>
+          <div>
+            <label for="about">Розкажіть про себе:</label>
+            <br /><br />
+            <textarea
+              id="about"
+              name="about"
+              rows="3"
+              cols="30"
+              placeholder="Кілька слів про вас..."
+            ></textarea>
+            <br /><br />
+            <button type="submit">Надіслати</button>
+            <br /><br />
+          </div>
+          <label for="audio">Завантажте своє Аудіо</label> <br /><br />
+          <input accept="audio/*" multiple type="file" name="file" id="file" />
+          <br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Загальні дані</legend>
+
+          <div>
+            <label for="destination">Куди ти хочеш поїхати?</label>
+            <select name="destination" id="destination">
+              <option value="paris">Париж</option>
+              <option value="new_york">Нью-Йорк</option>
+              <option value="tokyo" selected>Токіо</option>
+              <option value="sydney">Сідней</option>
+              <option value="cairo">Каїр</option>
+              <option value="rome">Рим</option>
+            </select>
+          </div>
+          <br /><br />
+
+          <div>
+            <label for="languages">Які мови ти хочеш вивчити?</label>
+            <select name="languages" id="languages" multiple size="3">
+              <option value="english">Англійська</option>
+              <option value="ukrainian">Українська</option>
+              <option value="spanish">Іспанська</option>
+              <option value="japanese">Японська</option>
+              <option value="german">Німецька</option>
+              <option value="french">Французька</option>
+            </select>
+          </div>
+          <br /><br />
+
+          <div>
+            <label for="university_course">На якому курсі ти навчаєшся?</label>
+            <select name="university_course" id="university_course">
+              <optgroup label="Бакалавр">
+                <option value="course1">1 курс</option>
+                <option value="course2">2 курс</option>
+                <option value="course3">3 курс</option>
+              </optgroup>
+              <optgroup label="Магістратура">
+                <option value="course4">4 курс</option>
+                <option value="course5">5 курс</option>
+                <option value="course6">6 курс</option>
+              </optgroup>
+            </select>
+          </div>
+          <br /><br />
+
+          <input
+            list="hobbies"
+            name="hobby"
+            placeholder="Твоє улюблене хобі?"
+          />
+          <datalist id="hobbies">
+            <option value="Малювання"></option>
+            <option value="Програмування"></option>
+            <option value="Музика"></option>
+          </datalist>
+
+          <br /><br />
+          Ти більше любиш: <br />
+          <input checked type="radio" id="cats" name="pets" value="cats" />
+          <label for="cats">Котів</label><br />
+
+          <input type="radio" id="dogs" name="pets" value="dogs" />
+          <label for="dogs">Собак</label><br />
+
+          <input type="radio" id="both" name="pets" value="both" />
+          <label for="both">І котів, і собак</label><br /><br />
+
+          Що ти більше любиш робити? <br />
+          <input checked type="radio" id="read" name="activity" value="read" />
+          <label for="read">Читати книжки</label><br />
+
+          <input type="radio" id="games" name="activity" value="games" />
+          <label for="games">Грати в ігри</label><br />
+
+          <input type="radio" id="travel" name="activity" value="travel" />
+          <label for="travel">Подорожувати</label><br /><br />
+
+          Що ти маєш вдома? <br />
+          <input type="checkbox" id="pc" name="pc" value="pc" />
+          <label for="pc"> Комп’ютер</label><br />
+
+          <input type="checkbox" id="phone" name="phone" value="phone" />
+          <label for="phone"> Смартфон</label><br />
+
+          <input type="checkbox" id="bike" name="bike" value="bike" />
+          <label for="bike"> Велосипед</label><br />
+
+          <input type="checkbox" id="pet" name="pet" value="pet" />
+          <label for="pet"> Домашня тварина</label><br />
+
+          <br /><br /><br />
+          <input type="submit" value="Надіслати" />
+          <input type="reset" value="Очистити" />
+        </fieldset>
+      </fieldset>
+    </form>
+    <br /><br /><br />
+    <a
+      href="C:\Users\Admin\OneDrive\Рабочий стол\web-technologies\lab_3\index.html"
+    >
+      <h1>Повернутися назад</h1></a
+    >
+  </body>
+</html>
