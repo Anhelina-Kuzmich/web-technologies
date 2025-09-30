@@ -1,0 +1,35 @@
+* {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+p {
+  color: green;
+  text-align: center;
+}
+
+div {
+  text-align: justify;
+}
+.firstIthird {
+  color: red;
+}
+.first {
+  white-space: nowrap;
+}
+#secound {
+  font-weight: bold;
+  font-style: italic;
+}
+.secounds {
+  text-shadow: 5px -5px 3px black;
+}
+.first-div {
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-indent: 50px;
+}
+.secound {
+  letter-spacing: 30px;
+  word-spacing: 50px;
+}
