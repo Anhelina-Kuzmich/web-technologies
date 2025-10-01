@@ -1,0 +1,42 @@
+body {
+  text-align: center;  
+}
+div{
+    margin: 15 auto;
+}
+p{
+    margin: 2;
+}
+.header{
+    font-size: 36px;
+    font-weight:bold;
+    color: red;
+}
+.semi-header{
+    font-size: 24px; 
+    font-weight:600;
+}
+.ingrediens{
+    font-weight: bold;
+}
+.additional{
+    text-decoration: underline
+}
+.invalid{
+    text-decoration: line-through;
+}
+.not-essentional{
+    background-color: yellow;
+}
+.wisdom{
+    font-style: italic;
+    font-size: 12px;
+    width: 70%;
+
+}
+.line{
+    width: 80%;
+  height: 5px;
+  background: green;
+
+}
