@@ -1,30 +1,48 @@
-span p.text-background{
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: dotted;
+p.text-background span {
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
 }
-div .text-background span{
-    background-color: yellow;
-     text-decoration: underline;
+
+div .text-background span {
+  background-color: yellow;
 }
-span span{
-    background-color: gray;
-    text-decoration: line-through;
+
+span span {
+  background-color: grey;
+  text-decoration: line-through;
 }
-ol span span{
-    font-size: 18px;
-    text-transform: uppercase;
+
+ol span span {
+  font-size: 18px;
+  text-transform: uppercase;
 }
+
 section > p {
-  text-shadow: 3px 3px 5px red; 
-  text-indent: 50px;           
+  text-shadow: 3px 3px 5px red;
+  text-indent: 50px;
 }
-li > ul{ 
-  list-style-image: url("mark3.jpg");
+
+li > ul {
+  list-style-image: url("mark2.png");
 }
-div .text-background{
-    word-spacing: 50px;   
+
+div > p.text-background {
+  word-spacing: 50px;
 }
-div.text-bold p{
-    font-weight: bold;
+
+div.bold > p {
+  font-weight: bold;
+}
+
+div.bold section > p {
+  line-height: 45px;
+}
+
+img + p {
+  background-color: brown;
+}
+
+section ~ p {
+  color: red;
 }

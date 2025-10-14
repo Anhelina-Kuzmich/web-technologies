@@ -1,8 +1,9 @@
-* {
+.main-fot {
   font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 40px;
 }
+
 p {
   color: green;
   text-align: center;
@@ -11,25 +12,33 @@ p {
 div {
   text-align: justify;
 }
-.firstIthird {
+
+.main-color {
   color: red;
 }
-.first {
+
+.main-white-space {
   white-space: nowrap;
 }
-#secound {
+
+#bold-italic {
   font-weight: bold;
   font-style: italic;
+
 }
-.secounds {
-  text-shadow: 5px -5px 3px black;
+
+.shadow {
+  text-shadow: 5px -5px 3px red;
+
 }
-.first-div {
+
+.div-text-decoration {
   text-decoration: line-through;
   text-transform: uppercase;
   text-indent: 50px;
 }
-.secound {
+
+.big-space {
+  word-spacing: 30px;
   letter-spacing: 30px;
-  word-spacing: 50px;
 }

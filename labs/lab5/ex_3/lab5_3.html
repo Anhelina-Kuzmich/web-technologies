@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Questionnaire</title>
+  </head>
+
+  <body>
+    <div class="form-page">
+      <form
+        action="action_page.html"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-container"
+      >
+        <fieldset>
+          <legend class="form-legend form-legend--main">
+            <h1>Форма для заповнення</h1>
+          </legend>
+
+          <fieldset class="form-group">
+            <legend class="form-legend">Особисті дані</legend>
+
+            <div class="form-field">
+              <label for="name" class="form-label">Ім'я</label>
+              <input
+                class="form-input"
+                tabindex="3"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Введіть ім'я"
+                pattern="[A-Za-z][^0-9]{6,}"
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="password" class="form-label">Пароль</label>
+              <input
+                class="form-input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Введіть пароль"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="date" class="form-label">День народження</label>
+              <input class="form-input" type="date" name="date" id="date" />
+            </div>
+
+            <div class="form-field">
+              <label for="email" class="form-label">Введіть свій Email:</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+                autocomplete="off"
+                pattern="[a-z0-9._%+-]+[a-z09.@-]+\.[a-z]{2,}$"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="tel" class="form-label">Введіть свій номер:</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="+380XXXXXXXXX"
+                pattern="^\+380\d{9}$"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend class="form-legend">Додати файли</legend>
+
+            <div class="form-field">
+              <label for="about" class="form-label">Розкажіть про себе:</label>
+              <textarea
+                class="form-input form-input-textarea"
+                id="about"
+                name="about"
+                rows="3"
+                cols="30"
+                placeholder="Кілька слів про вас..."
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="file" class="form-label">Завантажте своє Аудіо</label>
+              <input
+                accept="audio/*"
+                multiple
+                type="file"
+                name="file"
+                id="file"
+                class="form-input form-input-file"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend class="form-legend">Загальні дані</legend>
+
+            <div class="form-field">
+              <label for="destination" class="form-label form-label-select"
+                >Куди ти хочеш поїхати?</label
+              >
+              <select
+                name="destination"
+                id="destination"
+                class="form-input form-input-select"
+              >
+                <option value="paris">Париж</option>
+                <option value="new_york">Нью-Йорк</option>
+                <option value="tokyo" selected>Токіо</option>
+                <option value="sydney">Сідней</option>
+                <option value="cairo">Каїр</option>
+                <option value="rome">Рим</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="languages" class="form-label form-label-select"
+                >Які мови ти хочеш вивчити?</label
+              >
+              <select
+                name="languages"
+                id="languages"
+                multiple
+                size="3"
+                class="form-input form-input-select"
+              >
+                <option value="english">Англійська</option>
+                <option value="ukrainian">Українська</option>
+                <option value="spanish">Іспанська</option>
+                <option value="japanese">Японська</option>
+                <option value="german">Німецька</option>
+                <option value="french">Французька</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label
+                for="university_course"
+                class="form-label form-label-select"
+                >На якому курсі ти навчаєшся?</label
+              >
+              <select
+                name="university_course"
+                id="university_course"
+                class="form-input form-input-select"
+              >
+                <optgroup label="Бакалавр">
+                  <option value="course1">1 курс</option>
+                  <option value="course2">2 курс</option>
+                  <option value="course3">3 курс</option>
+                </optgroup>
+                <optgroup label="Магістратура">
+                  <option value="course4">4 курс</option>
+                  <option value="course5">5 курс</option>
+                  <option value="course6">6 курс</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="hobby" class="form-label">Хто тобі до вподоби?</label>
+              <input
+                class="form-input"
+                list="hobbies"
+                name="hobby"
+                id="hobby"
+                placeholder="Вибери або введи свій варіант"
+              />
+              <datalist id="hobbies">
+                <option value="Малювання"></option>
+                <option value="Програмування"></option>
+                <option value="Музика"></option>
+              </datalist>
+            </div>
+
+            <fieldset class="form-group form-group-inline-options">
+              <legend class="form-legend">Ти більше любиш:</legend>
+              <ul>
+                <input
+                  checked
+                  type="radio"
+                  id="cats"
+                  name="pets"
+                  value="cats"
+                />
+                <label for="cats" class="form-label form-label-inline"
+                  >Котів</label
+                >
+              </ul>
+
+              <ul>
+                <input type="radio" id="dogs" name="pets" value="dogs" />
+                <label for="dogs" class="form-label form-label-inline"
+                  >Собак</label
+                >
+              </ul>
+              <ul>
+                <input type="radio" id="both" name="pets" value="both" />
+                <label for="both" class="form-label form-label-inline"
+                  >І котів, і собак</label
+                >
+              </ul>
+            </fieldset>
+
+            <fieldset class="form-group form-group-inline-options">
+              <legend class="form-legend">Що ти більше любиш робити?</legend>
+              <ul>
+                <input
+                  checked
+                  type="radio"
+                  id="read"
+                  name="activity"
+                  value="read"
+                />
+                <label for="read" class="form-label form-label-inline"
+                  >Читати книжки</label
+                >
+              </ul>
+              <ul>
+                <input type="radio" id="games" name="activity" value="games" />
+                <label for="games" class="form-label form-label-inline"
+                  >Грати в ігри</label
+                >
+              </ul>
+
+              <ul>
+                <input
+                  type="radio"
+                  id="travel"
+                  name="activity"
+                  value="travel"
+                />
+                <label for="travel" class="form-label form-label-inline"
+                  >Подорожувати</label
+                >
+              </ul>
+            </fieldset>
+
+            <fieldset class="form-group form-group-inline-options">
+              <legend class="form-legend">Що ти маєш вдома?</legend>
+              <ul>
+                <input type="checkbox" id="pc" name="equipment" value="pc" />
+                <label for="pc" class="form-label form-label-inline"
+                  >Комп’ютер</label
+                >
+              </ul>
+              <ul>
+                <input
+                  type="checkbox"
+                  id="phone"
+                  name="equipment"
+                  value="phone"
+                />
+                <label for="phone" class="form-label form-label-inline"
+                  >Смартфон</label
+                >
+              </ul>
+              <ul>
+                <input
+                  type="checkbox"
+                  id="bike"
+                  name="equipment"
+                  value="bike"
+                />
+                <label for="bike" class="form-label form-label-inline"
+                  >Велосипед</label
+                >
+              </ul>
+              <ul>
+                <input type="checkbox" id="pet" name="equipment" value="pet" />
+                <label for="pet" class="form-label form-label-inline"
+                  >Домашня тварина</label
+                >
+              </ul>
+            </fieldset>
+
+            <div class="form-actions">
+              <input
+                type="submit"
+                value="Надіслати"
+                class="form-button form-button-submit"
+              />
+              <input
+                type="reset"
+                value="Очистити"
+                class="form-button form-button-reset"
+              />
+            </div>
+          </fieldset>
+        </fieldset>
+      </form>
+
+      <a
+        href="C:\Users\Admin\OneDrive\Рабочий стол\web-technologies\lab_3\index.html"
+        class="back-link"
+      >
+        <h1>Повернутися назад</h1>
+      </a>
+    </div>
+  </body>
+</html>

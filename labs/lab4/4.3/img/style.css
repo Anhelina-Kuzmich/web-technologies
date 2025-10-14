@@ -1,0 +1,28 @@
+a {
+  color: blueviolet;
+}
+
+.main-menu {
+  color: green;
+}
+
+ul li ul  {
+    list-style: none;
+}
+
+.sqr-point{
+  list-style-type: square;
+
+}
+.scnd-included{
+  background: url(img/picture.ico) no-repeat;
+ padding-left: 30px; 
+ height: 30px;
+}
+li a.not-underlined{
+    text-decoration: none;
+}
+.numered-marks{
+  list-style-position: inside;
+}
+
