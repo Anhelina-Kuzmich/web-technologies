@@ -1,0 +1,129 @@
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 150px;
+  float: left;
+}
+
+.btn {
+  background-color: rgb(255, 127, 80);
+  font-size: 20px;
+  color: rgb(7, 7, 159);
+  width: 160px;
+  height: 48px;
+  margin-right: 10px;
+  margin-top: 70px;
+}
+
+.buttons {
+  float: right;
+}
+
+.btn:hover {
+  box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 21px;
+}
+
+.container {
+  clear: both;
+  padding: 10px;
+}
+
+.defoult-shape {
+  width: 300px;
+  text-align: justify;
+  padding: 15px;
+  display: inline-block;
+  border-width: 5px;
+  vertical-align: top;
+}
+
+.first-row-shape {
+  border: 5px solid green;
+  margin: 1%;
+}
+
+.shape-1 {
+  border-radius: 40px;
+}
+
+.shape-2 {
+  border-radius: 100px 0;
+}
+
+.shape-3 {
+  border-radius: 50px 150px;
+}
+
+.secound-row-shape {
+  border: 20px solid transparent;
+  border-top-color: #006400;
+  border-bottom-color: #006400;
+  border-left-color: #00cc44;
+  border-right-color: #00cc44;
+}
+
+.shape-4 {
+  border-radius: 100px / 30px;
+}
+
+.shape-5 {
+  border-radius: 180px 40px 300px 48px / 50px 21px 71px 23px;
+}
+
+.shape-6 {
+  border-radius: 91px 0px 257px 0px / 0px 1px 199px 0px;
+}
+
+.shape-has-img {
+  border: 15px solid transparent;
+}
+
+.rombs {
+  padding: 15px;
+}
+
+.shape-7 {
+  border-image: url("../img/shaped-board.png") 19 stretch;
+  width: 241.2px;
+  height: 179.6px;
+  margin-right: 5%;
+}
+
+.shape-8 {
+  border-image: url("../img/shaped-board.png") 20% round;
+  width: 264.2px;
+  height: 209.6px;
+  margin-right: 5%;
+}
+
+.shape-9 {
+  border-image: url("../img/shaped-board.png") 30 round;
+  width: 264.2px;
+  height: 209.6px;
+}
+
+.shape-10 {
+  border-image: url("../img/dot-border.png") 17 stretch;
+  width: 264.2px;
+  height: 209.6px;
+  margin-right: 5%;
+}
+
+.shape-11 {
+  border-image: url("../img/dot-border.png") 12 round;
+  width: 264.2px;
+  height: 209.6px;
+  margin-right: 5%;
+}
+
+.shape-12 {
+  border-image: url("../img/dot-border.png") 8 stretch;
+  width: 264.2px;
+  height: 209.6px;
+}

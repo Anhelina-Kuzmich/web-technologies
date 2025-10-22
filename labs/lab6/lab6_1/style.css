@@ -1,0 +1,86 @@
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+.logo {
+  width: 150px;
+  float: left;
+}
+.btn {
+  background-color: rgb(255, 127, 80);
+  font-size: 20px;
+  color: rgb(7, 7, 159);
+  width: 160px;
+  height: 48px;
+  margin-right: 10px;
+  margin-top: 70px;
+}
+.buttons {
+  float: right;
+}
+.btn:hover {
+  box-shadow: inset 8px -5px 13px 9px rgba(255, 74, 13, 0.697);
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 21px;
+}
+.container {
+  clear: both;
+  padding: 10px;
+}
+
+.column-1 {
+  float: left;
+  width: 27%;
+  text-align: center;
+  padding-right: 40px;
+  border-right: dotted rgb(197, 2, 2) 6px;
+  height: 700px;
+  text-align: justify;
+}
+
+.column-2 {
+  float: left; 
+  width: 27%;
+  margin: 0 5%;
+  text-align: center;
+  padding-right: 40px;
+  border-right: dotted rgb(197, 2, 2) 6px;
+  height: 700px;
+  text-align: justify;
+}
+
+.column-3 {
+  float: right;
+  width: 27%;
+  text-align: center;
+  height: 600px;
+  text-align: justify;
+}
+
+.text-ilustration {
+  width: 200px;
+}
+.bird-image {
+  float: right; 
+  margin: 10px 0 10px 10px;  
+  height: auto; 
+}
+
+.london-bridge-image {
+  float: left; 
+  margin: 10px 10px 10px 0;  
+  height: auto; 
+}
+
+.sky-image {
+  float: right;
+  margin: 10px 0 5px 10px;
+  height: auto;
+}
+
+.city-image {
+  float: right;
+  margin: 5px 0 10px 10px;
+  height: auto;
+}

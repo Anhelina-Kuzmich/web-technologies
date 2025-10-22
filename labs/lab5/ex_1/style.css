@@ -50,7 +50,7 @@ ul.list-level-2 > li {
   background-size: 30px;
 }
 
-/* Перша група іконок */
+
 ul.list-level-2:first-of-type > li:nth-child(1) {
   background-image: url("img/ad_units.png");
 }
@@ -67,7 +67,7 @@ ul.list-level-2:first-of-type > li:nth-child(4) {
   background-image: url("img/car_rental.png");
 }
 
-/* Друга група іконок */
+
 ul.list-level-2:nth-of-type(2) > li:nth-child(1) {
   background-image: url("img/local_bar.png");
 }
