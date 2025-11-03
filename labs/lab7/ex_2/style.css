@@ -1,0 +1,55 @@
+.block-wrap {
+    position: relative;
+    text-align: center;
+}
+
+.hover-container {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.smallest-block {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: solid 2px black;
+    background-color: #00b050;
+    color: white;
+    cursor: pointer;
+}
+
+.middle-block {
+    display: none;
+    position: relative;
+    bottom: 50px;
+    left: 130px;
+    height: 30px;
+    margin: 5px auto;
+    background-color: #548dd4;
+    padding: 5px;
+    border: solid 2px black;
+    width: 300px;
+    color: white;
+    cursor: pointer;
+}
+
+.biggest-block {
+    display: none;
+    position: relative;
+    bottom: 50px;
+    left: 130px;
+    height: 100px;
+    background-color: #5f497a;
+    padding: 5px;
+    border: solid 2px black;
+    width: 300px;
+    color: white;
+}
+.hover-container:hover .smallest-block+.middle-block {
+    display: block;
+}
+
+.hover-container .middle-block:hover+.biggest-block {
+    display: block;
+}

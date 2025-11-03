@@ -1,0 +1,61 @@
+ .page-wrap { 
+    width: 500px;
+    height: 400px;
+    position: relative; 
+    background-color: rgb(165 165 165);
+    left: 40px;
+}
+
+.curent-temp {
+    width: 270px;
+    height: 300px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: 2;
+}
+
+.curent-temp-number {
+    color: gray;
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    top: 190px;
+    left: 10px;
+}
+
+.cloud-img {
+    position: absolute; 
+    top: 50px;
+    left: 100px;
+    z-index: 999; 
+}
+
+.arrow-group {
+    position: absolute;
+    left: 20px;
+    top: 110px;
+    z-index: 50;
+    background-color: gray;
+    opacity: 50%;
+    padding: 5px;
+}
+.weather-week{
+    position: absolute;
+    top: 260px;
+    left: 200px;
+    width: 220px;
+    height: 40px;
+    padding: 70px 0px 10px 10px;
+    z-index: 1;
+    background-color:rgb(193 193 193);
+    box-shadow: 11px 9px 4px -2px rgba(0,0,0,0.54);
+}
+.day-weather{
+    display: inline-block;
+    width: 40px;
+}
+.week-day-name{
+    opacity: 30%;
+}

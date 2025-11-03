@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(65, 113, 197);
+    margin: 0;
+}
+.page-wrap { 
+    width: 428px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    top: 12px;
+    left: 40px;
+    position: absolute;
+}
+.task-swicher {
+    display: flex;
+    justify-content: flex-end; 
+}
+.swich-task-item{
+    border: solid;
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+    width: 35px;
+    text-align: center;
+}
+.swich-task-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.swich-task-item p{
+    margin: 0 auto;
+}
