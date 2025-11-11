@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
+
 <body>
     <div class="page-wrap">
         <div class="task-swicher">
@@ -28,27 +30,99 @@
         <div class="weather-page">
             <div class="today-group">
                 <div class="title">
-                    <div class="title-font">Ner York, NY</div>
+                    <h2 class="title-font">New York, NY</h2>
                     <div class="regular-font">
-                        Thuesday, April 15th </br>
-                        Overcast
+                        Thuesday, April 15th
                     </div>
                 </div>
-                <div class="today-weather-group">
-                    <div class="main-info"> 
-                        <img src="../img/iconfinder_weather04.png" alt="clouds" width="50px">
-                        <div class="semi-tytle-font">58</div>
-                        <div class="sumbol-font">℉</div>
+                <div class="today-weather-group row space-beetwen ">
+                    <div class="forecast">
+                        <div>Overcast</div>
+                        <div class=" row space-around">
+                            <img src="../img/iconfinder_weather04.png" alt="clouds" width="70px" height="70px">
+                            <div class="today-temp row">
+                                <div class="semi-tytle-font">58</div>
+                                <div class="sumbol-font">℉</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="weather-details egular-font">
-                        Precipitation: 100% </br>
-                        Humidity: 97% </br>
-                        Wind: 4 mph SW </br>
-                        Pollen Count: 36
+                    <div class="space-around font-for-unnecessary">
+                        <ul>
+                            <li class="weather-details">Precipitation: 100% </li>
+                            <li class="weather-details"> Humidity: 97%</li>
+                            <li class="weather-details">Wind: 4 mph SW </li>
+                            <li class="weather-details">Pollen Count: 36</li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <ul class="week-group">
+                <div class="row space-between align-items-center">
+                    <div class="day-name">Today</div>
+                    <img src="../img/iconfinder_weather02.png" alt="sun with clouds" width="60px">
+                    <div class="column">
+                        <div class="max-temp">68°</div>
+                        <div class="font-for-unnecessary">36°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 36</div>
+                </div>
+                <li class="week-day-item row space-between align-items-center">
+                    <div class="day-name">Wednesday</div>
+                    <img src="../img/iconfinder_weather03.png" alt="sun with dark clouds" width="60px">
+                    <div class="column">
+                        <div class="max-temp">50°</div>
+                        <div class="font-for-unnecessary">39°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 36</div>
+                </li>
+                <li class="week-day-item row space-between align-items-center">
+                    <div class="day-name">Thuesday</div>
+                    <img src="../img/iconfinder_weather04.png" alt="dark clouds" width="60px">
+                    <div class="column">
+                        <div class="max-temp">68°</div>
+                        <div class="font-for-unnecessary">36°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 36</div>
+                </li>
+                <li class="week-day-item row space-between align-items-center">
+                    <div class="day-name">Friday</div>
+                    <img src="../img/iconfinder_weather05.png" alt="sun with clouds" width="60px">
+                    <div class="column">
+                        <div class="max-temp">55°</div>
+                        <div class="font-for-unnecessary">39°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 36</div>
+                </li>
+                <li class="week-day-item row space-between align-items-center">
+                    <div class="day-name">Saturday</div>
+                    <img src="../img/iconfinder_weather06.png" alt="sun with clouds" width="60px">
+                    <div class="column">
+                        <div class="max-temp">54°</div>
+                        <div class="font-for-unnecessary">43°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 36</div>
+                </li>
+                <li class="week-day-item row space-between align-items-center">
+                    <div class="day-name">Sunday</div>
+                    <img src="../img/iconfinder_weather07.png" alt="sun with clouds" width="60px">
+                    <div class="column">
+                        <div class="max-temp">64°</div>
+                        <div class="font-for-unnecessary">50°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 30</div>
+                </li>
+                <li class="week-day-item row space-between align-items-center">
+                    <div class="day-name">Monday</div>
+                    <img src="../img/iconfinder_weather01.png" alt="sun" width="60px">
+                    <div class="column">
+                        <div class="max-temp">61°</div>
+                        <div class="font-for-unnecessary">50°</div>
+                    </div>
+                    <div class="font-for-unnecessary">Pollen 36</div>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
+
 </html>

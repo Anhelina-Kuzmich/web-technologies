@@ -1,20 +1,28 @@
 body {
-    background-color: rgb(65, 113, 197);
+    background-color: rgb(155, 155, 155);
     margin: 0;
 }
-.page-wrap { 
-    width: 428px;
+
+.page-wrap {
+    padding: 20px;
+    width: 358px;
     background-color: #ffffff;
     margin: 0 auto;
     top: 12px;
     left: 40px;
     position: absolute;
+    border: solid;
 }
+
+/*navigation bar*/
+
 .task-swicher {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    padding: 0 0 40px 0;
 }
-.swich-task-item{
+
+.swich-task-item {
     border: solid;
     margin: 5px;
     padding: 5px;
@@ -22,11 +30,95 @@ body {
     width: 35px;
     text-align: center;
 }
+
 .swich-task-item a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.swich-task-item p{
+
+.swich-task-item p {
     margin: 0 auto;
+}
+
+
+/*utility fonts*/
+
+.title-font {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.semi-tytle-font {
+    font-size: 24px;
+    color: rgb(100, 99, 99);
+}
+
+.sumbol-font {
+    font-size: 12px;
+    color: gray;
+}
+
+.font-for-unnecessary {
+    color: gray;
+}
+
+/*utility-position*/
+
+.row {
+    flex-direction: row;
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/*specific-clases*/
+
+.weather-page {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.today-weather-group {
+    width: 350px;
+}
+
+.today-temp {
+    padding: 15px 0 0 0;
+}
+
+.weather-details {
+    list-style-type: none;
+    padding: 5px 0 0 0;
+    line-height: 10px;
+    font-size: 12px;
+}
+
+.week-group {
+    width: 350px;
+}
+
+.day-name {
+    font-weight: 600;
+    width: 100px;
+}
+
+.week-day-item {
+    border-top: 2px solid;
+    padding: 0;
+}
+
+.week-day-item:last-child {
+    border-bottom: 2px solid black;
 }

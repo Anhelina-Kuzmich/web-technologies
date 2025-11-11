@@ -1,21 +1,28 @@
 body {
-    background-color: rgb(65, 113, 197);
+    background-color: rgb(155, 155, 155);
     margin: 0;
 }
 
-.page-wrap { 
-    width: 428px;
-    background-color: rgb(197, 197, 68);
+.page-wrap {
+    padding: 20px;
+    width: 358px;
+    background-color: #ffffff;
     margin: 0 auto;
     top: 12px;
+    left: 40px;
     position: absolute;
+    border: solid;
 }
+
+/*navigation bar*/
 
 .task-swicher {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+    padding: 0 0 40px 0;
 }
-.swich-task-item{
+
+.swich-task-item {
     border: solid;
     margin: 5px;
     padding: 5px;
@@ -30,6 +37,6 @@ body {
     font-weight: bold;
 }
 
-.swich-task-item p{
+.swich-task-item p {
     margin: 0 auto;
 }
