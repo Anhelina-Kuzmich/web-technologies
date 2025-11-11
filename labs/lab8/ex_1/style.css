@@ -107,6 +107,7 @@ body {
 
 .week-group {
     width: 350px;
+    padding: 0;
 }
 
 .day-name {
